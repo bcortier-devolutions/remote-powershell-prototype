@@ -27,6 +27,3 @@ Write-Host "AcceptUrl='$AcceptUrl'"
 Write-Host "ConnectUrl='$ConnectUrl'"
 Write-Host "TestUrl='$TestUrl'"
 
-Write-Host "PwshCmd='/usr/local/bin/pwsh -sshs -NoLogo -NoProfile'"
-Write-Host "ServerOptions='-n --binary --websocket-ignore-zeromsg'"
-
