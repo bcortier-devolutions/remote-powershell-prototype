@@ -31,7 +31,7 @@ $ClientCommand = "jetsocat connect $ConnectUrl"
 Set-Content -Path $(Join-Path $PSScriptRoot 'ssh') -Value "#!/bin/sh`n$ClientCommand`n" -Force
 chmod +x ssh
 
-$ServerCommand = "jetsocat accept $AcceptUrl"
+$ServerCommand = "jetsocat accept $AcceptUrl --cmd 'pwsh -sshs -NoLogo -NoProfile'"
 Set-Content -Path $(Join-Path $PSScriptRoot 'server.sh') -Value "#!/bin/sh`n$ServerCommand`n" -Force
 chmod +x server.sh
 
